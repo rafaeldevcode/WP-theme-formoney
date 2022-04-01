@@ -1,0 +1,135 @@
+.site-main{
+    width: 100%;
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-archive{
+    width: 100%;
+}
+
+.home-site-main{
+    width: 70%;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+    margin-top: 20px;
+}
+
+.body-home{
+    display: flex;
+    flex-direction: row;
+}
+
+.single-home{
+    /* width: 325px; */
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(170, 170, 170);
+    margin-bottom: 20px;
+    background: rgb(246, 246, 246);
+    transition: box-shadow .5s;
+}
+
+.single-home:hover{
+    box-shadow: 0px 0px 5px var(--cor-principal);
+}
+
+.single-home:nth-child(1),
+.single-home:nth-child(2),
+.single-home:nth-child(3){
+    display: none;
+}
+
+.home-image{
+    /* width: 325px; */
+    width: 100%;
+    height: 250px;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.conteudo-home{
+    padding: 10px;
+}
+
+.conteudo-home a{
+    color: var(--cor-titulo);
+    transition: color .3s;
+}
+
+.conteudo-home a:hover{
+    color: var(--cor-principal);
+}
+
+.conteudo-home a h2{
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+    
+}
+
+.conteudo-home p{
+    text-align: center;
+    color: var(--cor-list);
+    font-size: 1em;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+}
+
+.conteudo-home .autor{
+    display: flex;
+}
+
+.conteudo-home .autor p{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.conteudo-home .autor p b,
+.conteudo-home .autor ul li b{
+    color: var(--cor-principal);
+}
+
+.conteudo-home .autor ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo-home .autor ul li{
+    margin: 0 2px;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 950px){
+    .body-home{
+        flex-direction: column;
+    }
+    .home-site-main{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 680px){
+    .body-home{
+        padding: 20px;
+    }
+    .single-home,
+    .home-image{
+        width: 100%;
+    }
+}

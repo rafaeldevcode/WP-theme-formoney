@@ -1,0 +1,44 @@
+.tema-author{
+    background: url(../images/autor.png) no-repeat center;
+    width: 100%;
+    margin: 20px 0;
+    padding: 30px;
+    border: 2px solid var(--cor-principal);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.image-autor{
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--cor-principal);
+    border-radius: 100%;
+    margin-right: 40px;
+}
+
+.image-autor img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.tema-author h1{
+    color: var(--cor-principal);
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width:620px){
+    .tema-author{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .image-autor{
+        margin: auto;
+    }
+    .tema-author h1{
+        text-align: center;
+        font-size: 2em;
+    }
+}

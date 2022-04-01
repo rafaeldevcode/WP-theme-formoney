@@ -1,0 +1,23 @@
+.conteudo-search{
+    background: url(../images/search.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    max-width: 800px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 0;
+    border:1px solid var(--cor-principal);
+    border-radius: 5px;
+}
+
+.conteudo-search p{
+    font-size: 1.3em;
+    color: #000;
+    text-align: center;
+}
+
+.conteudo-search p span{
+    color: var(--cor-principal);
+}

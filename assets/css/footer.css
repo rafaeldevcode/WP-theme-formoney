@@ -1,0 +1,73 @@
+/* ///// RODAPÉ ///// */
+.site-footer{
+    background: var(--cor-principal);
+    padding: 30px 100px;
+}
+
+.formoney-footer{
+    width: 100%;
+    text-align: center;
+}
+
+.formoney-menu-rodape{
+    margin-bottom: 20px;
+}
+
+.formoney-menu-rodape ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style: none;
+}
+
+.formoney-menu-rodape ul li a{
+    color: #FFF;
+    font-size: 1em;
+}
+
+.formoney-menu-rodape ul li span{
+    color: #FFF;
+    font-weight: bolder;
+    margin: 0 3px;
+}
+
+.formoney-endereco{
+    margin-bottom: 20px;
+}
+
+.formoney-endereco ul{
+    list-style: none;
+}
+
+.formoney-endereco ul li{
+    color: #FFF;
+    font-size: 1em;
+}
+
+.formoney-footer p{
+    color: #FFF;
+    font-size: 1em;
+    width: 100%;
+    border-bottom: 2px solid #FFF;
+}
+
+@media only screen and (max-width:750px){
+    .site-footer{
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .formoney-menu-rodape ul {
+        flex-direction: column;
+    }
+    .formoney-menu-rodape ul li a,
+    .formoney-endereco ul li,
+    .formoney-footer p{
+        font-size: .8em;
+    }
+    .formoney-menu-rodape ul li span {
+        display: none;
+    }
+}

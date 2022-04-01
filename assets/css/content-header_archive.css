@@ -1,0 +1,120 @@
+.header-archive{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single-archive{
+    width: 100%;
+    height: 300px;
+    border: 5px solid #FFF;
+}
+
+.single-archive:nth-child(2){
+    width: 25%;
+    height: 200px;
+    vertical-align: top;
+}
+
+.single-archive:nth-child(3){
+    width: 25%;
+    height: 200px;
+}
+
+.single-archive:nth-child(4){
+    width: 50%;
+    height: 200px;
+}
+
+.image-header{
+    /* position: image-header; */
+    width: 100%;
+    height: 100%;
+    background: center;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    transition: background-position .6s;
+}
+
+.image-header:hover{
+    background-position: left;
+}
+
+.image-header > div{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.image-header > div h2{
+    color: #FFF;
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.single-archive:nth-child(2) .image-header > div h2,
+.single-archive:nth-child(3) .image-header > div h2{
+    font-size: .8em;
+}
+
+.single-archive:nth-child(4) .image-header > div h2{
+    font-size: 1em;
+}
+
+.image-header > div .autor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-header > div .autor li{
+    display: block;
+    margin: 0 3px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.single-archive:nth-child(2) .image-header > div .autor li,
+.single-archive:nth-child(3) .image-header > div .autor li{
+    font-size: .8em;
+}
+
+.single-archive:nth-child(4) .image-header > div .autor li{
+    font-size: 1em;
+}
+
+.image-header > div ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-header > div ul li{
+    display: none;
+}
+
+.image-header > div ul li:nth-child(2){
+    display: block;
+}
+
+.image-header > div ul li a{
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: .7em;
+    background: var(--cor-principal);
+    padding: 4px;
+    margin: 0 3px;
+}
+
+@media only screen and (max-width: 850px){
+    .single-archive:nth-child(2),
+    .single-archive:nth-child(3),
+    .single-archive:nth-child(4){
+        width: 100%;
+    }
+}

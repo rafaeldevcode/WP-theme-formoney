@@ -1,0 +1,12 @@
+.formoney-sidebar{
+    width: 30%;
+    padding: 10px;
+    /* border: 1px solid #CCC; */
+    text-align: center;
+}
+
+@media only screen and (max-width: 950px){
+    .formoney-sidebar{
+        width: 100%;
+    }
+}
