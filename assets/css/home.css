@@ -119,6 +119,109 @@
     font-size: 1em;
 }
 
+/* // */
+.single-home-category > div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.single-home-category h3{
+    font-size: 1.2em;
+    margin: 10px 0;
+    position: relative;
+}
+
+.single-home-category h3::after,
+.single-home-category h3::before{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 3px;
+}
+
+.single-home-category h3::after{
+    width: 100%;
+    background: rgb(147, 147, 147);
+    z-index: 0;
+}
+
+.single-home-category h3::before{
+    width: 30%;
+    background: var(--cor-principal);
+    z-index: 1;
+}
+
+.single-home-category article{
+    width: 350px !important;
+    margin: 0 10px;
+}
+
+.home-thumbnail{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.home-thumbnail img{
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.single-home-category .post-categories li:not(:nth-child(2)){
+    display: none;
+}
+
+.single-home-category .post-categories li a{
+    color: var(--cor-principal);
+    font-weight: bolder;
+    font-size: 1em;
+    transition: all .4s;
+}
+
+.single-home-category .post-categories li a:hover{
+    color: var(--cor-list);
+}
+
+.single-home-category h4{
+    color: var(--cor-list);
+    cursor: pointer;
+    margin: 5px 0;
+    font-size: 1.1em;
+    transition: all .4s;
+}
+
+.single-home-category h4:hover{
+    color: var(--cor-principal);
+}
+
+.single-home-category p{
+    font-size: 1em;
+    color: var(--cor-list);
+    margin-top: 5px;
+}
+
+/* Botoes do carrossel */
+.slick-prev::before,
+.slick-next::before{
+    color: #FFF;
+    border-radius: 3px;
+    background: var(--cor-principal);
+    border: 1px solid var(--cor-principal);
+    padding: 15px 5px;
+}
+
+.slick-next{
+    right: 15px;
+}
+
+.slick-prev{
+    left: 0;
+    z-index: 1;
+}
+
 @media only screen and (max-width: 950px){
     .body-home{
         flex-direction: column;
@@ -148,5 +251,11 @@
     .single-home > a,
     .content-body-home{
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 510px){
+    .slick-list{
+        height: 350px;
     }
 }

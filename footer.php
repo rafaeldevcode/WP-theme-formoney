@@ -19,7 +19,8 @@
             <p>&copy; <?= date('Y'); ?> FORMONEY - TODOS OS DIREITOS RESERVADOS</p>
         </section>
 
-        <script text="type/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri() . '/libs/jquery/jquery-3.6.0.js' ?>"></script>
+        <script type="text/javascript" src="<?php echo get_template_directory_uri() . '/libs/slick/slick.min.js' ?>"></script>
     </footer>
 
     <script text="type/javascript">
@@ -88,6 +89,18 @@
         function removerClasse(nomeVariavel, nomeClasse){
             nomeVariavel.classList.remove(nomeClasse);
         }
+
+        // Funcao de carrossel utilizando biblioteca slick
+        $(document).ready(function(){
+            $('.teste').slick({
+                dots: false,
+                centerMode: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+                infinite: true,
+            });
+        });
     </script>
 </body>
 </html>

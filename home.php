@@ -1,3 +1,7 @@
+    <!-- Biblioteca slick carrossel -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/libs/slick/slick.css';  ?>">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/libs/slick/slick-theme.css';  ?>">
+
 <?php
 
     $estilosPagina = ['home.css', 'content-header_home.css'];
@@ -22,17 +26,22 @@
 
                             get_template_part( 'templates/content', 'home' );
                         endwhile;
-                    endif;
+                    endif; ?>
 
-                    // Exibir posts da categoria noticias
-                    // $categories = get_categories();
-                    $postsNews = get_posts(array('category__in' => 6, 'numberposts' => 2));
-                    foreach($postsNews as $post):
-                        get_template_part( 'templates/components/content', 'posts_new' );
-                    endforeach;
+                    <!-- Exibir posts da categoria noticias -->
+                    <section class="single-home-category">
+                        <h3>Ultimas noticias</h3>
+                        <div class="teste">
+                            <?php
+                                $postsNews = get_posts(array('category__in' => 6, 'numberposts' => 10));
+                                foreach($postsNews as $post): ?>
+                                    <?php get_template_part( 'templates/components/content', 'posts_new' ); ?>
+                                <?php endforeach;
+                            ?>
+                        </div>
+                    </section>
 
-                    get_template_part( 'templates/components/content', 'load_more' );
-                ?>
+                    <?php get_template_part( 'templates/components/content', 'load_more' );?>
             </section>
         </div>
 

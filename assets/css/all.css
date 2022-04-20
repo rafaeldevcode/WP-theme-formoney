@@ -40,14 +40,14 @@ input{
     font-weight: 700;
     font-size: .8em;
     border: 1px solid var(--cor-principal);
-    background: var(--cor-principal);
-    color: #FFF;
+    background: #FFF;
+    color: var(--cor-principal);
     transition: all .4s;
 }
 
 .button-load-more .button:hover{
-    background: #FFF;
-    color: var(--cor-principal);
+    background: var(--cor-principal);
+    color: #FFF;
 }
 
 /* // Botões de próximo e anterior */

@@ -32,7 +32,7 @@
             if(has_custom_logo()):
                 echo the_custom_logo();
             else: ?>
-                <img src="http://localhost:8888/formoney/wp-content/uploads/2020/05/formoney-logo.png" alt="Formoney" style="width:220px"></img>
+                <img src="<?php echo get_template_directory_uri() . '/assets/images/logo.webp' ?>" alt="Formoney" style="width:220px"></img>
             <?php endif;
         ?>
     </section>
