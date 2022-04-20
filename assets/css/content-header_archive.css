@@ -28,7 +28,6 @@
 }
 
 .image-header{
-    /* position: image-header; */
     width: 100%;
     height: 100%;
     background: center;
@@ -92,14 +91,6 @@
     list-style: none;
     display: flex;
     flex-direction: row;
-}
-
-.image-header > div ul li{
-    display: none;
-}
-
-.image-header > div ul li:nth-child(2){
-    display: block;
 }
 
 .image-header > div ul li a{

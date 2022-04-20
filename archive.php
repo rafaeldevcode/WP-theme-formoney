@@ -5,7 +5,7 @@
 ?>
     <main id="primary" class="site-main">
         <?php
-            get_template_part( 'templates/content', 'header_archive' );
+            get_template_part( 'templates/components/content', 'header_archive' );
         ?>
 
         <section class="sessao-archive">
@@ -17,6 +17,8 @@
                         get_template_part( 'templates/content', 'archive' );
                         endwhile;
                     endif;
+
+                    get_template_part( 'templates/components/content', 'load_more' );
                 ?>
             </div>
 

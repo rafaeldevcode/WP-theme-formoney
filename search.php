@@ -31,6 +31,8 @@
                     else: ?>
                         <img src="<?php echo get_template_directory_uri() . '/assets/images/search-2.svg' ?>" alt="Pesquisa Não encontrada">
                     <?php endif;
+
+                    get_template_part( 'templates/components/content', 'load_more' );
                 ?>
             </div>
 

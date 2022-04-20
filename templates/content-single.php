@@ -8,13 +8,26 @@
 
         <div class="formoney-thumbnail">
             <?php
-                // the_post_thumbnail();
+                the_post_thumbnail();
             ?>
         </div>
 
         <div class="site-content">
             <?php
                 the_content();
+                wp_link_pages([
+                    'before'           => '<div class="post-nav-links">' . __( '' ),
+                    'after'            => '</div>',
+                    'link_before'      => '',
+                    'link_after'       => '',
+                    'aria_current'     => 'page',
+                    'next_or_number'   => 'next',
+                    'separator'        => ' ',
+                    'nextpagelink'     => __( 'Próxima' ),
+                    'previouspagelink' => __( 'Anterior' ),
+                    'pagelink'         => '%',
+                    'echo'             => 1,
+                ]);
             ?>
         </div>
     </section>
@@ -44,14 +57,5 @@
             <?php the_category(); ?>
         </div>
     </section>
-
-    <section class="next-prev-post">
-        <div class="anterior">
-            <p><?php previous_post_link( '%link', '%title', true ); ?></p>
-        </div>
-        
-        <div class="proximo">
-            <p><?php next_post_link( '%link', '%title', true ); ?></p>
-        </div>
-    </section>
+    <?php get_template_part( 'templates/components/content', 'next_prev' ); ?>
 </article>

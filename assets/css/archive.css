@@ -56,7 +56,7 @@
     color: var(--subtitulo);
     text-transform: uppercase;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .conteudo-archive .titulos .author li{

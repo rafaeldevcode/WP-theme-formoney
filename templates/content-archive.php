@@ -8,7 +8,7 @@
             <?php the_title('<h2>', '</h2>') ?>
 
             <ul class="author">
-                <li>por <b><?php the_author(); ?></b></li> 
+                <li>por <b><?php echo the_author(); ?></b></li> 
                 <li>-</li> 
                 <li><b><?php echo get_the_modified_date('D'); ?></b></li> 
                 <li>-</li> 

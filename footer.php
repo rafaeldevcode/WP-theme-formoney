@@ -18,9 +18,11 @@
 
             <p>&copy; <?= date('Y'); ?> FORMONEY - TODOS OS DIREITOS RESERVADOS</p>
         </section>
+
+        <script text="type/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     </footer>
 
-    <script>
+    <script text="type/javascript">
         let pesquisa = false;
         let menu = false;
 

@@ -11,7 +11,7 @@
 
 :root{
     --cor-principal: #23A556;
-    --titulo: rgb(40, 40, 40);
+    --titulo: #212121;
     --subtitulo: rgb(95, 95, 95);
     --cor-list: rgb(55, 55, 55);
 }
@@ -22,4 +22,91 @@ body{
 
 input{
     caret-color: var(--cor-principal);
+}
+
+/* // Botão de carregar mais */
+.button-load-more{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-load-more .button{
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .8em;
+    border: 1px solid var(--cor-principal);
+    background: var(--cor-principal);
+    color: #FFF;
+    transition: all .4s;
+}
+
+.button-load-more .button:hover{
+    background: #FFF;
+    color: var(--cor-principal);
+}
+
+/* // Botões de próximo e anterior */
+.next-prev-post{
+    width: 100%;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-prev-post .anterior,
+.next-prev-post .proximo{
+    width: 50%;
+    height: 50px;
+    max-width: 200px;
+    padding: 10px 5px;
+    display: flex;
+    align-items: center;
+}
+
+.next-prev-post .anterior p a,
+.next-prev-post .proximo p a{
+    color: var(--cor-list);
+    font-size: .9em;
+    transition: color .3s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; 
+}
+
+.next-prev-post .anterior p a:hover,
+.next-prev-post .proximo p a:hover{
+    color: var(--cor-principal);
+}
+
+.next-prev-post .anterior{
+    text-align: left;
+    border-left: 8px solid var(--subtitulo);
+    transition: border-left .3s;
+    background: rgb(238, 238, 238);
+    margin-right: 2px;
+}
+
+.next-prev-post .anterior:hover{
+    border-left: 8px solid var(--cor-principal);
+}
+
+.next-prev-post .proximo{
+    text-align: right;
+    border-right: 8px solid var(--subtitulo);
+    transition: border-right .3s;
+    background: rgb(238, 238, 238);
+    margin-left: 2px;
+}
+
+.next-prev-post .proximo:hover{
+    border-right: 8px solid var(--cor-principal);
 }

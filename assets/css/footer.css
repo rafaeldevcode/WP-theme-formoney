@@ -1,6 +1,6 @@
 /* ///// RODAPÉ ///// */
 .site-footer{
-    background: var(--cor-principal);
+    background: var(--titulo);
     padding: 30px 100px;
 }
 

@@ -22,6 +22,8 @@
                     get_template_part( 'templates/content', 'archive' );
                     endwhile;
                 endif;
+
+                get_template_part( 'templates/components/content', 'load_more' );
             ?>
         </div>
 
